@@ -1,0 +1,6 @@
+{
+  "name": "DJB Touch Display",
+  "description": "Modular professional Android DJ touch display and controller system by DJ Brayan featuring Standalone Dual-Deck Mode, VirtualDJ Bridge Mode, and USB MIDI Engine with MIDI Learn.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

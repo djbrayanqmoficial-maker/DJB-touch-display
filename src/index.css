@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #121417;
+    color: #F3F4F6;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  h1, h2, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono, .tabular-nums {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Subtle dark scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141619;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #383C44;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #525862;
+}
+
+/* Horizontal Fader (Crossfader & Settings sliders) */
+input[type="range"].djb-fader {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  touch-action: none;
+}
+
+input[type="range"].djb-fader::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 4px;
+  background: #0B0C0E;
+  border: 1px solid #2C3038;
+}
+
+input[type="range"].djb-fader::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 38px;
+  border-radius: 3px;
+  background: #E5E7EB;
+  border: 1px solid #121417;
+  margin-top: -16px;
+}
+
+/* Subtle dotted matrix background for X/Y FX Touch Pads */
+.djb-xy-grid {
+  background-color: #16181C;
+  background-image: radial-gradient(#2E323B 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+  touch-action: none;
+}
+
+
