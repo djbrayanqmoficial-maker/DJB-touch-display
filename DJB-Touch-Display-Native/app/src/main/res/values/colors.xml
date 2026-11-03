@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="djb_bg_dark">#121417</color>
+    <color name="djb_surface">#1E2126</color>
+    <color name="djb_cyan">#0099DB</color>
+    <color name="djb_white">#F3F4F6</color>
+</resources>
